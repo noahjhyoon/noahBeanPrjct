@@ -33,10 +33,10 @@ public class sampleTestController {
 	@RequestMapping(value = "/sampleTest01", method = RequestMethod.GET)
 	public String sampleTest01(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
-		return "/sampleTest01";
+		return "sampleTest01";
 	}
 	
-	@RequestMapping(value = "sampleTest/sampleTest02", method = RequestMethod.GET)
+	@RequestMapping(value = "/sampleTest/sampleTest02", method = RequestMethod.GET)
 	public String sampleTest02(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		return "sampleTest/sampleTest02";
